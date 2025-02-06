@@ -1,0 +1,96 @@
+fileVersion: 1
+id: 45fc2516-e9e6-491e-8688-56b0ca9cb0f7
+name: NATION
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: Nation data as defined by TPC-H
+  locationName: SAMPLE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4a35c4e-2341-4936-924e-1f5b1aa2aca6
+          stepCounter: 45fc2516-e9e6-491e-8688-56b0ca9cb0f7
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: N_NATIONKEY
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4d94b82-3fce-41b9-b2d7-ef8a32ddea19
+          stepCounter: 45fc2516-e9e6-491e-8688-56b0ca9cb0f7
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        name: N_NAME
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 142fd770-fbe3-425e-a172-7d83bef62843
+          stepCounter: 45fc2516-e9e6-491e-8688-56b0ca9cb0f7
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: N_REGIONKEY
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a977783-c132-4134-ac0c-882faf456433
+          stepCounter: 45fc2516-e9e6-491e-8688-56b0ca9cb0f7
+        config: {}
+        dataType: VARCHAR(152)
+        defaultValue: ""
+        description: ""
+        name: N_COMMENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SAMPLE', 'NATION') }}
+  name: NATION
+  schema: ""
+  sqlType: Source
+  table: NATION
+  type: sourceInput
+  version: 1
+type: Node
